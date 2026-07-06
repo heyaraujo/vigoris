@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigoris Contábil</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="icon" href="assests/img/Hero.png">
+    <!-- Fontes Premium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Seu Kit FontAwesome -->
+    <script src="https://kit.fontawesome.com/38f9d81da7.js" crossorigin="anonymous"></script>
+    <!-- ==========================================
+         2. OPEN GRAPH (PARA REDES SOCIAIS E WHATSAPP)
+    =========================================== -->
+    <meta property="og:title" content="Hibiscos Lençóis Agência | Passeios Premium">
+    <meta property="og:description" content="Descubra o paraíso dos Lençóis Maranhenses com segurança e conforto.">
+    <meta property="og:image" content="assets/img/Hero.png"> <!-- Imagem que aparece ao enviar o link no WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">vigoris<span>.</span></a>
+
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="index.html#como-funciona">Como funciona</a>
+                <a href="index.html#clientes">Clientes</a>
+                <a href="index.html#planos">Planos</a>
+            </nav>
+
+            <a href="index.html#planos" class="btn-nav">
+                Começar agora
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section reveal">
+        <div class="container">
+            <div class="hero-card">
+                <div class="hero-content">
+                    <h1>Sua jornada empreendedora, mas <em>muito</em> mais leve.</h1>
+                    <p class="hero-subtitle">A parceira contábil 100% digital para quem está focado em construir o
+                        futuro do próprio negócio — sem burocracia desnecessária e com total clareza.</p>
+
+                    <div class="hero-buttons">
+                        <a href="#planos" class="btn btn-dark">Começar grátis</a>
+                        <a href="servicos.html" class="btn btn-outline-dark">Saber mais</a>
+                    </div>
+
+                    <div class="hero-proof">
+                        <div class="avatar-group">
+                            <div class="avatar" style="background-color: #2a2a2a;"></div>
+                            <div class="avatar" style="background-color: #4a4a4a;"></div>
+                            <div class="avatar" style="background-color: #6a6a6a;"></div>
+                        </div>
+                        <p><strong>Mais de 2.400 empresas</strong><br>já aceleram com a Vigoris</p>
+                    </div>
+                </div>
+
+                <div class="hero-image-side">
+                    <div class="image-placeholder premium-logo-showcase">
+                        <!-- Brilho dourado no fundo -->
+                        <div class="glow-effect"></div>
+                        <!-- Seu Logo -->
+                        <img src="assests/img/Hero.png" alt="Logo Vigoris" class="floating-hero-logo">
+
+                        <!-- Stickers alinhados -->
+                        <div class="sticker sticker-1">foco</div>
+                        <div class="sticker sticker-3">estratégia</div>
+                        <div class="sticker sticker-4">liberdade</div>
+                    </div>
+                    <!-- Linha geométrica elegante -->
+                    <svg class="abstract-line" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10,80 Q50,20 100,110 T190,40" stroke="#a38047" stroke-width="4" stroke-linecap="round"
+                            fill="none" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOGOS DE CLIENTES 
+    <section id="clientes" class="brands-section reveal">
+        <div class="container brands-wrapper">
+            <span>EMPRESAS QUE CONFIAVAM NA VIGORIS</span>
+            <div class="brands-grid">
+                <div class="brand-item">studio jm</div>
+                <div class="brand-item">loja sophía</div>
+                <div class="brand-item">estúdio bt</div>
+                <div class="brand-item">laura.</div>
+                <div class="brand-item">codenest</div>
+                <div class="brand-item">vibe&co</div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- SERVIÇOS (Preview) -->
+    <section id="servicos-preview" class="services-section reveal">
+        <div class="container">
+            <div class="section-badge">Serviços</div>
+            <h2 class="section-title-light">Assumimos a complexidade,<br>para você focar no <em>resultado</em>.</h2>
+
+            <div class="services-grid">
+                <a href="servicos.html" class="service-card reveal" style="text-decoration: none;">
+                    <div class="service-image-bg">
+                        <img src="assests/img/Serviços/servico-1.jpg" alt="Abertura de empresa" class="img-icon-main">
+                    </div>
+                    <div class="service-footer">
+                        <h3>Abertura de empresa</h3>
+                        <div class="arrow-circle">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="servicos.html" class="service-card reveal reveal-delay-1" style="text-decoration: none;">
+                    <div class="service-image-bg">
+                        <img src="assests/img/Serviços/servico-2.jpg" alt="Abertura de empresa" class="img-icon-main">
+                    </div>
+                    <div class="service-footer">
+                        <h3>Contabilidade mensal</h3>
+                        <div class="arrow-circle">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="servicos.html" class="service-card reveal reveal-delay-2" style="text-decoration: none;">
+                    <div class="service-image-bg">
+                        <img src="assests/img/Serviços/servico-4.jpg" alt="Abertura de empresa" class="img-icon-main">
+                    </div>
+                    <div class="service-footer">
+                        <h3>Planejamento tributário</h3>
+                        <div class="arrow-circle">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="servicos.html" class="service-card reveal reveal-delay-3" style="text-decoration: none;">
+                    <div class="service-image-bg">
+                        <img src="assests/img/Serviços/servico.jpg" alt="Abertura de empresa" class="img-icon-main">
+                    </div>
+                    <div class="service-footer">
+                        <h3>BPO Financeiro</h3>
+                        <div class="arrow-circle">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="services-bottom-text reveal">
+                <p>Procura uma demanda sob medida? <span>Temos soluções personalizadas.</span> <a
+                        href="servicos.html">Ver portfólio completo</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS BENTO GRID -->
+    <section class="stats-section reveal">
+        <div class="container">
+            <h2 class="stats-main-statement">A Vigoris une inteligência digital e suporte consultivo para negócios que
+                demandam eficiência. Plataforma integrada, conformidade fiscal e um time técnico que atende com
+                agilidade técnica, eliminando burocracias desnecessárias.</h2>
+
+            <div class="bento-grid">
+                <!-- Bloco Grande Esquerda -->
+                <div class="bento-box box-white box-tall">
+                    <div class="bento-big-num">+2.400</div>
+                    <h4>Empresas consolidadas</h4>
+                    <p>Ao longo de nossa trajetória, estruturamos operações eficientes do início ao crescimento.</p>
+                </div>
+
+                <!-- Coluna Central -->
+                <div class="bento-center-stack">
+                    <div class="bento-box box-white">
+                        <h4>Atendimento direto</h4>
+                        <p>Acesso rápido via múltiplos canais dedicados à sua rotina diária.</p>
+                        <div class="mini-icons">
+                            <i class="fa-regular fa-comment-dots"></i>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                    </div>
+                    <div class="bento-box box-gold">
+                        <div class="bento-big-num">98%</div>
+                        <h4>Taxa de retenção e satisfação</h4>
+                        <p>Indicadores sólidos baseados em precisão técnica e pontualidade.</p>
+                    </div>
+                </div>
+
+                <!-- Bloco Grande Direita -->
+                <div class="bento-box box-cream box-tall">
+                    <div class="bento-big-num">72h</div>
+                    <h4>Constituição de CNPJ</h4>
+                    <p>Processamento ágil e alinhamento completo com os órgãos governamentais reguladores.</p>
+                </div>
+
+                <!-- Barra inferior do Bento Grid -->
+                <div class="bento-row-full">
+                    <h3>Atuação de cobertura nacional</h3>
+                    <p>Com uma estrutura totalmente descentralizada e digital, gerenciamos a contabilidade e
+                        conformidade da sua empresa em qualquer região do território nacional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona" class="steps-section reveal">
+        <div class="container">
+            <div class="steps-card">
+                <div class="center-badge">Fluxo de Integração</div>
+                <h2>Quatro etapas para migrar<br>sem interrupções.</h2>
+
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-grid">
+                        <div class="timeline-step">
+                            <div class="step-number">01</div>
+                            <h3>Diagnóstico inicial</h3>
+                            <p>Análise do cenário fiscal atual da sua empresa para mapear melhorias imediatas.</p>
+                        </div>
+                        <div class="timeline-step active">
+                            <div class="step-number">02</div>
+                            <h3>Definição do plano</h3>
+                            <p>Apresentação de valores transparentes e escopo ajustado à sua escala operacional.</p>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-number">03</div>
+                            <h3>Transição assistida</h3>
+                            <p>Nossa equipe assume os trâmites burocráticos sem interromper sua emissão de notas.</p>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-number">04</div>
+                            <h3>Gestão contínua</h3>
+                            <p>Acompanhamento por dashboards dinâmicos com relatórios mensais claros.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section class="instagram-section reveal"
+        style="padding: 80px 0; background-color: var(--white); border-top: 1px solid rgba(0,0,0,0.05);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 40px;">
+                <div class="center-badge" style="margin: 0 auto 16px auto;">Nosso Dia a Dia</div>
+                <h2 class="section-title-light" style="font-size: 36px; margin-bottom: 16px;">Acompanhe a Vigoris no
+                    <span style="color: var(--gold);">Instagram</span>
+                </h2>
+            </div>
+
+            <div class="instagram-feed-wrapper" style="max-width: 1000px; margin: 0 auto;">
+                <script type="text/javascript" src="https://www.juicer.io/embed/vigoriscontabil/embed-code.js" async
+                    defer></script>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="testimonial-section reveal">
+        <div class="container testimonial-wrapper">
+            <div class="testimonial-image-block">
+                <div class="image-box" style="background-color: #161616;"></div>
+                <div class="rating-badge">
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>Cliente Verificado</span>
+                </div>
+            </div>
+            <div class="testimonial-content-block">
+                <div class="sub-badge">Depoimento em Destaque</div>
+                <blockquote class="quote-text">
+                    "A transição para o modelo digital da Vigoris reduziu nossos custos tributários em mais de 35% logo
+                    nos primeiros meses. A previsibilidade financeira que temos hoje mudou completamente nossa gestão."
+                </blockquote>
+                <div class="quote-author">
+                    <strong>Rafael Lima</strong>
+                    <p>Diretor de Tecnologia · São Paulo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section reveal">
+        <div class="container">
+            <div class="center-badge-dark">FAQ</div>
+            <h2 class="faq-main-title">Ficou com alguma dúvida?<br>Nós <em>esclarecemos</em>.</h2>
+
+            <div class="faq-container">
+                <details class="faq-item" name="faq-accordion">
+                    <summary>Como funciona a contabilidade 100% digital?</summary>
+                    <div class="faq-content">
+                        <p>Toda a nossa troca de documentos, assinaturas e reuniões é feita de forma online através de
+                            plataformas seguras. Você tem acesso rápido ao nosso time técnico sem precisar sair da sua
+                            empresa, garantindo agilidade e eliminando a papelada inútil.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item" name="faq-accordion">
+                    <summary>Vocês atendem empresas do meu segmento?</summary>
+                    <div class="faq-content">
+                        <p>Sim! Atendemos prestadores de serviços, profissionais liberais, agências, clínicas e
+                            comércios. Durante o diagnóstico inicial, avaliamos o seu cenário para garantir que podemos
+                            aplicar a melhor engenharia fiscal para o seu negócio.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item" name="faq-accordion">
+                    <summary>Como é feito o processo de migração de contabilidade?</summary>
+                    <div class="faq-content">
+                        <p>Nós cuidamos de absolutamente tudo. Após o alinhamento, entramos em contato com o seu
+                            contador anterior para solicitar o histórico e a documentação. Sua empresa não para de
+                            faturar e não sofre interrupções durante a transição.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item" name="faq-accordion">
+                    <summary>Qual é o tempo de resposta do suporte técnico?</summary>
+                    <div class="faq-content">
+                        <p>Temos o compromisso de responder às suas dúvidas da rotina diária no mesmo dia útil através
+                            de múltiplos canais diretos. Para questões estratégicas complexas, mantemos um SLA ágil para
+                            que você nunca fique no escuro.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer reveal">
+        <div class="container">
+            <!-- Bloco de CTA -->
+            <div class="footer-cta-card">
+                <div class="cta-left">
+                    <div class="badge-line">Iniciar Transição</div>
+                    <h2>Sua empresa regularizada<br>e otimizada.</h2>
+                    <div class="cta-actions">
+                        <!-- Usando o ícone do WhatsApp do FontAwesome -->
+                        <a href="#" class="btn-cta-whatsapp"><i class="fa-brands fa-whatsapp"
+                                style="margin-right: 8px; font-size: 18px;"></i> Contatar via WhatsApp</a>
+                        <a href="#" class="btn-cta-email">Enviar Mensagem</a>
+                    </div>
+                </div>
+                <div class="cta-right-box">
+                    <div class="badge-green">Análise Preliminar</div>
+                    <h3>Isenta</h3>
+                    <p>Avaliamos seu enquadramento tributário atual sem custos operacionais adicionais. Retorno em até
+                        duas horas úteis.</p>
+                </div>
+            </div>
+
+            <!-- Links e Rodapé -->
+            <div class="footer-links-grid">
+                <div class="footer-info">
+                    <div class="logo">vigoris<span>.</span></div>
+                    <p class="footer-desc">Soluções inteligentes em contabilidade digital. Performance, conformidade e
+                        transparência corporativa.</p>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Serviços</h4>
+                    <a href="servicos.html">Abertura de empresa</a>
+                    <a href="servicos.html">Contabilidade mensal</a>
+                    <a href="servicos.html">BPO Financeiro</a>
+                    <a href="servicos.html">Folha de pagamento</a>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Empresa</h4>
+                    <a href="sobre.html">Sobre nós</a>
+                    <a href="#">Artigos</a>
+                    <a href="#">Carreiras</a>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Suporte</h4>
+                    <a href="#">Central de Ajuda</a>
+                    <a href="#">Canais Diretos</a>
+                    <a href="#">Privacidade</a>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; 2026 Vigoris Contábil · CRC/SP 000000/O</p>
+                <div class="social-icons">
+                    <span><i class="fa-brands fa-linkedin-in"></i></span>
+                    <span><i class="fa-brands fa-instagram"></i></span>
+                    <span><i class="fa-brands fa-x-twitter"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/55DD999999999?text=Olá,%20gostaria%20de%20falar%20com%20um%20consultor%20da%20Vigoris."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <script src="assests/js/script.js"></script>
+</body>
+
+</html>

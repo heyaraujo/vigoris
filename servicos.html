@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="icon" href="assests/img/Hero.png">
+    <!-- Fontes Premium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Seu Kit FontAwesome -->
+    <script src="https://kit.fontawesome.com/38f9d81da7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">vigoris<span>.</span></a>
+
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="index.html#como-funciona">Como funciona</a>
+                <a href="index.html#clientes">Clientes</a>
+                <a href="index.html#planos">Planos</a>
+            </nav>
+
+            <a href="index.html#planos" class="btn-nav">
+                Começar agora
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- PORTFÓLIO E DETALHAMENTO DE SERVIÇOS -->
+    <section class="internal-page-header reveal">
+        <div class="container">
+            <h1 class="page-title">Assumimos a complexidade,<br>para você focar no <em>resultado</em>.</h1>
+
+            <div class="portfolio-grid">
+                <!-- Card 1 -->
+                <div class="portfolio-card active reveal" data-service="abertura">
+                    <div class="portfolio-image-bg">
+                        <img src="assests/img/Serviços/servico-1.jpg" alt="Abertura de empresa" class="img-icon-main">
+                    </div>
+                    <div class="portfolio-footer">
+                        <h3>Abertura de empresa</h3>
+                        <div class="arrow-circle">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="portfolio-card reveal reveal-delay-1" data-service="contabilidade">
+                    <div class="portfolio-image-bg">
+                        <img src="assests/img/Serviços/servico-2.jpg" alt="Abertura de empresa" class="img-icon-main">
+                    </div>
+                    <div class="portfolio-footer">
+                        <h3>Contabilidade mensal</h3>
+                        <div class="arrow-circle">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="portfolio-card reveal reveal-delay-2" data-service="planejamento">
+                    <div class="portfolio-image-bg">
+                        <img src="assests/img/Serviços/servico-4.jpg" alt="Abertura de empresa" class="img-icon-main">
+                    </div>
+                    <div class="portfolio-footer">
+                        <h3>Planejamento tributário</h3>
+                        <div class="arrow-circle">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="portfolio-card reveal reveal-delay-3" data-service="bpo">
+                    <div class="portfolio-image-bg">
+                        <img src="assests/img/Serviços/servico.jpg" alt="Abertura de empresa" class="img-icon-main">
+                    </div>
+                    <div class="portfolio-footer">
+                        <h3>BPO Financeiro</h3>
+                        <div class="arrow-circle">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Painel de Explicação Dinâmica -->
+            <div class="service-details-panel reveal">
+
+                <!-- Detalhe 1: Abertura de Empresa -->
+                <div class="details-content active" id="details-abertura">
+                    <div class="details-header">
+                        <h2>Legalização e Constituição de CNPJ</h2>
+                        <p>Estruturamos a base jurídica do seu negócio de forma ágil, garantindo o enquadramento correto
+                            desde o primeiro dia para evitar impostos desnecessários.</p>
+                    </div>
+                    <div class="details-body-grid">
+                        <div class="details-block">
+                            <h4><i class="fa-regular fa-circle-check"></i> O que está incluso:</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Estudo de viabilidade da
+                                    localização e nome empresarial</li>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Definição das atividades
+                                    (CNAEs) ideais para sua operação</li>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Elaboração do Contrato Social
+                                    ou Requerimento de Empresário</li>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Registro na Junta Comercial e
+                                    obtenção do CNPJ</li>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Inscrição Municipal, Estadual e
+                                    licenciamento básico</li>
+                            </ul>
+                        </div>
+                        <div class="details-block border-left-gold">
+                            <h4><i class="fa-solid fa-users"></i> Para quem é indicado:</h4>
+                            <p>Profissionais liberais, prestadores de serviços tecnológicos, freelancers de agências ou
+                                e-commerces que faturam acima do limite do MEI e precisam se consolidar como
+                                Microempresa (ME).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detalhe 2: Contabilidade Mensal -->
+                <div class="details-content" id="details-contabilidade">
+                    <div class="details-header">
+                        <h2>Escrituração e Conformidade Fiscal Contínua</h2>
+                        <p>Mantemos sua operação em total segurança jurídica perante o Fisco. Cuidamos das apurações,
+                            obrigações acessórias e fechamentos de forma 100% digital.</p>
+                    </div>
+                    <div class="details-body-grid">
+                        <div class="details-block">
+                            <h4><i class="fa-regular fa-circle-check"></i> O que está incluso:</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Cálculo e emissão mensal das
+                                    guias de impostos (Simples Nacional, Lucro Presumido)</li>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Elaboração de balancetes, DRE e
+                                    Balanço Patrimonial estruturado</li>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Envio de todas as obrigações
+                                    acessórias exigidas pelo governo</li>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Emissão e controle de
+                                    Pró-labore e distribuição de lucros isentos</li>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Suporte técnico contínuo focado
+                                    em tirar dúvidas da rotina fiscal</li>
+                            </ul>
+                        </div>
+                        <div class="details-block border-left-gold">
+                            <h4><i class="fa-solid fa-users"></i> Para quem é indicado:</h4>
+                            <p>Empresas ativas que buscam migrar de uma contabilidade tradicional e burocrática para uma
+                                plataforma digital transparente, integrada e sem perda de contato humano direto.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detalhe 3: Planejamento Tributário -->
+                <div class="details-content" id="details-planejamento">
+                    <div class="details-header">
+                        <h2>Engenharia Fiscal para Redução de Impostos</h2>
+                        <p>Uma análise profunda da estrutura financeira da sua empresa para encontrar brechas legais e
+                            incentivos que permitam pagar o menor imposto possível de forma lícita.</p>
+                    </div>
+                    <div class="details-body-grid">
+                        <div class="details-block">
+                            <h4><i class="fa-regular fa-circle-check"></i> O que está incluso:</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Estudo comparativo real entre
+                                    Simples Nacional, Lucro Presumido e Lucro Real</li>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Simulação de cenários com base
+                                    no histórico de faturamento e despesas</li>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Identificação de créditos
+                                    tributários passíveis de recuperação</li>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Adequação de CNAEs para
+                                    enquadramento em anexos menos onerosos (Fator R)</li>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Relatório estratégico com plano
+                                    de ação prático para o próximo ano fiscal</li>
+                            </ul>
+                        </div>
+                        <div class="details-block border-left-gold">
+                            <h4><i class="fa-solid fa-users"></i> Para quem é indicado:</h4>
+                            <p>Negócios em fase de escala ou com margens apertadas que sentem o peso da carga tributária
+                                atual e precisam redesenhar sua operação para maximizar os lucros legitimamente.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detalhe 4: BPO Financeiro -->
+                <div class="details-content" id="details-bpo">
+                    <div class="details-header">
+                        <h2>Terceirização da Gestão Financeira Operacional</h2>
+                        <p>Nós assumimos o controle das suas contas a pagar, a receber e conciliação bancária diária.
+                            Você ganha dados estratégicos sem gastar tempo com planilhas ou sistemas.</p>
+                    </div>
+                    <div class="details-body-grid">
+                        <div class="details-block">
+                            <h4><i class="fa-regular fa-circle-check"></i> O que está incluso:</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Conciliação bancária diária das
+                                    contas correntes da empresa</li>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Agendamento de contas a pagar
+                                    na sua plataforma bancária para sua aprovação</li>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Emissão de notas fiscais de
+                                    venda/serviço e envio aos clientes</li>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Gestão de cobrança de
+                                    inadimplentes e controle de fluxo de caixa</li>
+                                <li><i class="fa-solid fa-chevron-right list-arrow"></i> Emissão de relatórios
+                                    financeiros semanais (Fluxo de caixa realizado e previsto)</li>
+                            </ul>
+                        </div>
+                        <div class="details-block border-left-gold">
+                            <h4><i class="fa-solid fa-users"></i> Para quem é indicado:</h4>
+                            <p>Fundadores e CEOs que não possuem braço operacional focado no financeiro ou não querem
+                                contratar um departamento interno, mas exigem relatórios de precisão para tomada de
+                                decisões.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer reveal">
+        <div class="container">
+            <div class="footer-cta-card">
+                <div class="cta-left">
+                    <div class="badge-line">Iniciar Transição</div>
+                    <h2>Sua empresa regularizada<br>e otimizada.</h2>
+                    <div class="cta-actions">
+                        <a href="#" class="btn-cta-whatsapp"><i class="fa-brands fa-whatsapp"
+                                style="margin-right: 8px; font-size: 18px;"></i> Contatar via WhatsApp</a>
+                        <a href="#" class="btn-cta-email">Enviar Mensagem</a>
+                    </div>
+                </div>
+                <div class="cta-right-box">
+                    <div class="badge-green">Análise Preliminar</div>
+                    <h3>Isenta</h3>
+                    <p>Avaliamos seu enquadramento tributário atual sem custos operacionais adicionais. Retorno em até
+                        duas horas úteis.</p>
+                </div>
+            </div>
+
+            <div class="footer-links-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo"
+                        style="text-decoration: none; color: inherit;">vigoris<span>.</span></a>
+                    <p class="footer-desc">Soluções inteligentes em contabilidade digital. Performance, conformidade e
+                        transparência corporativa.</p>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Serviços</h4>
+                    <a href="#">Abertura de empresa</a>
+                    <a href="#">Contabilidade mensal</a>
+                    <a href="#">BPO Financeiro</a>
+                    <a href="#">Folha de pagamento</a>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Empresa</h4>
+                    <a href="sobre.html">Sobre nós</a>
+                    <a href="#">Artigos</a>
+                    <a href="#">Carreiras</a>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Suporte</h4>
+                    <a href="#">Central de Ajuda</a>
+                    <a href="#">Canais Diretos</a>
+                    <a href="#">Privacidade</a>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; 2026 Vigoris Contábil · CRC/SP 000000/O</p>
+                <div class="social-icons">
+                    <span><i class="fa-brands fa-linkedin-in"></i></span>
+                    <span><i class="fa-brands fa-instagram"></i></span>
+                    <span><i class="fa-brands fa-x-twitter"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/55DD999999999?text=Olá,%20gostaria%20de%20falar%20com%20um%20consultor%20da%20Vigoris."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="assests/js/script.js"></script>
+</body>
+
+</html>
