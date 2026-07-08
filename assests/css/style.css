@@ -1785,3 +1785,48 @@ em {
         font-size: 28px;
     }
 }
+
+/* =========================================
+   CARDS DE CANAIS DIRETOS
+========================================= */
+.contact-card {
+    background-color: var(--card-light);
+    padding: 40px 20px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.contact-card i {
+    font-size: 2.5rem;
+    color: var(--gold);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover i {
+    transform: scale(1.1);
+}
+
+.contact-card h3 {
+    color: var(--black);
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.contact-card p {
+    color: #555555;
+    font-size: 0.95rem;
+}
