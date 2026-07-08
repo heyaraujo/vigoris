@@ -70,3 +70,17 @@ if (mobileMenuBtn && navMenu) {
         });
     });
 }
+
+/* =========================================
+   REMOVER PRELOADER APÓS O CARREGAMENTO
+========================================= */
+window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        // Oculta a tela de carregamento após a página carregar
+        // Adicionamos 500ms (meio segundo) apenas para a transição ficar mais suave
+        setTimeout(() => {
+            preloader.classList.add('preloader-hidden');
+        }, 1000); 
+    }
+});
