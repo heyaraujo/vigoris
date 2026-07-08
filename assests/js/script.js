@@ -84,3 +84,29 @@ window.addEventListener('load', function() {
         }, 1000); 
     }
 });
+
+/* =========================================
+   ACEITE DE COOKIES (LGPD)
+========================================= */
+window.addEventListener('DOMContentLoaded', () => {
+    const cookieBanner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('accept-cookies');
+
+    if (cookieBanner && acceptBtn) {
+        // Verifica se o usuário já aceitou os cookies no passado
+        if (!localStorage.getItem('vigorisCookiesAceitos')) {
+            // Se não aceitou, espera 1 segundo e mostra o banner suavemente
+            setTimeout(() => {
+                cookieBanner.classList.add('show');
+            }, 1000);
+        }
+
+        // Ação ao clicar no botão "Aceitar"
+        acceptBtn.addEventListener('click', () => {
+            // Salva no navegador que o cliente aceitou
+            localStorage.setItem('vigorisCookiesAceitos', 'sim');
+            // Esconde o banner
+            cookieBanner.classList.remove('show');
+        });
+    }
+});
