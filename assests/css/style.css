@@ -313,18 +313,6 @@ em {
     position: relative;
 }
 
-.floating-hero-logo {
-    width: 100%;
-    max-width: 360px;
-    height: auto;
-    max-height: 360px;
-    object-fit: contain;
-    animation: float 6s ease-in-out infinite;
-    position: relative;
-    z-index: 2;
-    filter: drop-shadow(0 20px 40px rgba(163, 128, 71, 0.3));
-}
-
 @keyframes float {
     0% {
         transform: translateY(0px);
@@ -1481,108 +1469,6 @@ em {
     }
 }
 
-@media (max-width: 768px) {
-
-    /* ==========================================
-   MENU MOBILE E BOTÃO HAMBÚRGUER
-========================================== */
-    .mobile-menu-btn {
-        display: none;
-        background: transparent;
-        border: none;
-        font-size: 26px;
-        color: var(--black);
-        cursor: pointer;
-        z-index: 1001;
-        transition: var(--transition);
-    }
-
-    @media (max-width: 768px) {
-
-        /* Mostra o hambúrguer e esconde o botão CTA no header para economizar espaço */
-        .mobile-menu-btn {
-            display: block;
-        }
-
-        .btn-nav {
-            display: none;
-        }
-
-        /* Configuração do Menu Dropdown Invisível por Padrão */
-        .nav-menu {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(10px);
-            flex-direction: column;
-            align-items: center;
-            padding: 30px 0;
-            gap: 24px;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-            /* Efeito de revelar de cima para baixo */
-            clip-path: inset(0 0 100% 0);
-            transition: clip-path 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            display: flex !important;
-            /* Força o flex para sobrepor o display:none genérico */
-        }
-
-        /* Classe que o JS vai adicionar quando clicar no hambúrguer */
-        .nav-menu.active {
-            clip-path: inset(0 0 0 0);
-        }
-
-        .nav-menu a {
-            margin: 0;
-            font-size: 16px;
-            font-weight: 600 !important;
-        }
-
-        /* Ajustes Gerais Mobile do Resto do Site */
-        .hero-content h1 {
-            font-size: 40px;
-        }
-
-        .section-title-light,
-        .pricing-main-title,
-        .steps-card h2 {
-            font-size: 34px;
-        }
-
-        .footer-cta-card h2 {
-            font-size: 32px;
-        }
-
-        .footer-links-grid {
-            grid-template-columns: 1fr;
-            gap: 30px;
-        }
-
-        .pricing-container,
-        .services-grid,
-        .timeline-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .price-card {
-            min-height: auto;
-        }
-
-        .page-title {
-            font-size: 36px;
-        }
-
-        .portfolio-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .portfolio-card {
-            height: 320px;
-        }
-    }
-}
 
 /* ==========================================
    MENU MOBILE E BOTÃO HAMBÚRGUER
@@ -2023,57 +1909,142 @@ em {
     }
 }
 
+
+/* ==========================================
+   CORREÇÃO DO HERO NO MOBILE
+========================================== */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+
     .hero-section {
-        padding-top: 110px;
+        padding-top: 96px;
+        padding-bottom: 24px;
     }
 
     .hero-card {
-        padding: 36px 24px;
-        border-radius: 30px;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 28px 22px 32px;
+        border-radius: 28px;
+        gap: 28px;
+        min-height: auto;
+        overflow: hidden;
+    }
+
+    .hero-card::before {
+        background-size: 32px 32px;
+        opacity: .12;
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: left;
+        position: relative;
+        z-index: 5;
     }
 
     .hero-content h1 {
-        font-size: 38px;
-        letter-spacing: -1.5px;
+        font-size: clamp(34px, 10vw, 42px);
+        line-height: .98;
+        letter-spacing: -2px;
+        margin-bottom: 18px;
+        max-width: 100%;
+    }
+
+    .hero-content h1 em {
+        display: inline-block;
+        white-space: nowrap;
     }
 
     .hero-subtitle {
-        font-size: 16px;
-        margin-inline: auto;
+        font-size: 14px;
+        line-height: 1.45;
+        margin-bottom: 26px;
+        max-width: 100%;
     }
 
     .hero-buttons {
-        justify-content: center;
-        margin-bottom: 36px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 28px;
+        width: 100%;
+    }
+
+    .btn {
+        padding: 13px 14px;
+        font-size: 13px;
+        width: 100%;
+        white-space: nowrap;
     }
 
     .hero-proof {
-        justify-content: center;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .avatar {
+        width: 30px;
+        height: 30px;
+        margin-right: -10px;
+    }
+
+    .hero-proof p {
+        font-size: 11px;
+        line-height: 1.2;
+    }
+
+    .hero-image-side {
+        min-height: 260px;
+        height: 260px;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .image-placeholder,
+    .premium-logo-showcase {
+        height: 100%;
+        width: 100%;
+    }
+
+    .glow-effect {
+        width: 230px;
+        height: 230px;
+        filter: blur(18px);
+        opacity: .8;
     }
 
     .floating-hero-logo {
-        max-width: 260px;
+        max-width: 255px;
+        max-height: 255px;
+        transform: translateY(10px);
     }
 
     .sticker {
-        font-size: 10px;
-        padding: 7px 13px;
+        font-size: 9px;
+        padding: 6px 10px;
+        border-radius: 9px;
+        letter-spacing: .4px;
     }
 
     .sticker-1 {
-        top: 20px;
-        left: 20px;
+        top: 24px;
+        left: 48px;
     }
 
     .sticker-3 {
-        top: 60px;
-        right: 8px;
+        top: 78px;
+        right: 2px;
     }
 
     .sticker-4 {
-        bottom: 20px;
+        bottom: 26px;
         right: 40px;
+    }
+
+    .abstract-line {
+        transform: scale(.82);
     }
 }
