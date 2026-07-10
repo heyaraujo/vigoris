@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigo | Vigoris Contábil</title>
+    <meta id="metaDescription" name="description" content="Conteúdo da Vigoris Contábil.">
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="assests/css/blog.css">
+    <link rel="icon" href="assests/img/Hero.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/38f9d81da7.js" crossorigin="anonymous"></script>
+    <meta id="ogTitle" property="og:title" content="Artigo | Vigoris Contábil">
+    <meta id="ogDescription" property="og:description" content="Conteúdo da Vigoris Contábil.">
+    <meta id="ogImage" property="og:image" content="https://i.postimg.cc/qvJKkYPf/LOGO-VIGORIS-6.png">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="pt_BR">
+</head>
+<body>
+    <div id="preloader" class="preloader">
+        <img src="assests/img/Hero.png" alt="Logo Vigoris" class="preloader-logo">
+    </div>
+
+    <header class="navbar navbar-light-page" id="navbar">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">vigoris<span>.</span></a>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="index.html#como-funciona">Como funciona</a>
+                <a href="index.html#clientes">Clientes</a>
+                <a href="blog.html" class="nav-active">Blog</a>
+                <a href="sobre.html">Sobre Nós</a>
+            </nav>
+            <a href="https://wa.me/5598981544104" class="btn-nav">
+                Começar agora <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div id="articleLoading" class="article-loading" hidden></div>
+
+        <article id="articlePage" hidden>
+            <header class="article-header">
+                <div class="container article-header-inner">
+                    <a href="blog.html" class="back-to-blog"><i class="fa-solid fa-arrow-left"></i> Voltar aos conteúdos</a>
+                    <div class="article-meta-top">
+                        <span id="articleCategory" class="article-category"></span>
+                        <span id="articleDate"></span>
+                        <span id="articleReadTime"></span>
+                    </div>
+                    <h1 id="articleTitle"></h1>
+                    <p id="articleExcerpt" class="article-lead"></p>
+                </div>
+            </header>
+
+            <div class="container article-cover-wrap">
+                <img id="articleCover" class="article-cover" alt="" hidden>
+            </div>
+
+            <div class="container article-layout">
+                <div id="articleContent" class="article-content"></div>
+                <aside class="article-aside">
+                    <div class="article-cta-box">
+                        <span>Precisa de apoio?</span>
+                        <h3>Transforme informação em decisão.</h3>
+                        <p>Converse com a equipe da Vigoris e entenda o melhor caminho para sua empresa.</p>
+                        <a href="https://wa.me/5598981544104" target="_blank" rel="noopener noreferrer">
+                            Falar com a Vigoris <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </article>
+
+        <section id="relatedSection" class="related-section" hidden>
+            <div class="container">
+                <div class="related-heading">
+                    <span class="section-badge">Continue lendo</span>
+                    <h2>Outros conteúdos</h2>
+                </div>
+                <div id="relatedGrid" class="articles-grid related-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer reveal">
+        <div class="container">
+            <div class="footer-links-grid">
+                <div class="footer-info">
+                    <div class="logo">vigoris<span>.</span></div>
+                    <p class="footer-desc">Soluções inteligentes em contabilidade. Performance, conformidade e transparência corporativa.</p>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Serviços</h4>
+                    <a href="servicos.html">Abertura de empresa</a>
+                    <a href="servicos.html">Contabilidade mensal</a>
+                    <a href="servicos.html">BPO Financeiro</a>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Empresa</h4>
+                    <a href="sobre.html">Sobre nós</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Suporte</h4>
+                    <a href="canais.html">Canais Diretos</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 Vigoris Contábil</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5598981544104" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+    <script src="assests/js/supabase-config.js"></script>
+    <script src="assests/js/script.js"></script>
+    <script src="assests/js/artigo.js"></script>
+</body>
+</html>
